@@ -101,7 +101,7 @@
             "null"
           ]
         },
-        "type": {
+        "mentorship_type": {
           "type": [
             "string",
             "null"

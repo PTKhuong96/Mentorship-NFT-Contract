@@ -4,18 +4,11 @@ use serde::{Deserialize, Serialize};
 use cosmwasm_std::Empty;
 pub use cw721_base::{ContractError, InstantiateMsg, MintMsg, MinterResponse, QueryMsg};
 
-#[derive(Serialize, Deserialize, Clone, PartialEq, JsonSchema, Debug, Default)]
-pub struct Trait {
-    pub display_type: Option<String>,
-    pub trait_type: String,
-    pub value: String,
-}
-
 // see: https://docs.opensea.io/docs/metadata-standards
 #[derive(Serialize, Deserialize, Clone, PartialEq, JsonSchema, Debug, Default)]
 pub struct Metadata {
     pub group_id: Option<String>,
-    pub type: Option<String>,
+    pub mentorship_type: Option<String>,
     pub summary: Option<String>,
     pub agenda: Option<String>,
     pub mentor: Option<String>,
